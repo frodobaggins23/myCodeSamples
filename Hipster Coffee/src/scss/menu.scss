@@ -1,0 +1,79 @@
+.menu {
+
+    // adjustments in heading styles
+    h2 {
+        margin-left: 0;
+    }
+
+    h3 {
+        margin-left: 0;
+    }
+
+    //highlighting of left column on wide screens
+    #highlight {
+        
+        @media screen and (min-width:991px) {
+            background-color: #fbf5ee;
+            padding: 1rem;
+            
+        }
+    }
+
+    //flex positioning starts here...
+
+    //level 1 -main menu container
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 95%;
+    margin: 1rem auto;
+
+    @media screen and (max-width:991px) {
+        flex-direction: column;
+        
+        }
+         
+    //level 2 - sections (left+right) 
+    .menu__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-basis: 45%;
+        flex-wrap: wrap;
+        align-self: flex-start;
+        
+    
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 80%;
+            flex-wrap: nowrap;
+            align-self: initial;
+        }
+    
+       //level 3 - columns in each section (wrapping on)
+        .menu__col {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-basis: 40%;
+            align-self: stretch;
+            
+            
+            //level 4 - content in each column, this container is used to vertically align contents
+            .menu__content {
+
+                //level 5- actual contens of the menu
+                .menu__item {
+                    display: flex;
+                    justify-content: space-between;
+                    line-height: 2.5;
+                }
+            }
+            
+        }
+    }
+
+
+}
+

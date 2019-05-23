@@ -1,0 +1,20 @@
+@keyframes shaking {
+    0% {transform: translate3d(10px,-5px,0px);}
+    10% {transform: translate3d(5px,0px,0px);}
+    20% {transform: translate3d(0px,5px,0px);}
+    30% {transform: translate3d(-5px,-5px,0px);}
+    40% {transform: translate3d(-10px,0px,0px);}
+    50% {transform: translate3d(15px,-5px,0px);}
+    60% {transform: translate3d(10px,0px,0px);}
+    70% {transform: translate3d(5px,5px,0px);}
+    80% {transform: translate3d(0px,10px,0px);}
+    90% {transform: translate3d(5px,5px,0px);}
+    100% {transform: translate3d(0px,10px,0px);}
+    
+    
+}
+
+@keyframes portfolio__flip {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(90deg);}
+}

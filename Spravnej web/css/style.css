@@ -1,0 +1,501 @@
+/*global*/
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+/*navbar*/
+.navigace {
+  background-color: #343a40;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 150;
+  transition: top 0.3s;
+}
+
+#navbarNavDropdown .navbar-nav {
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  #navbarNavDropdown .navbar-nav {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
+nav.navbar {
+  font-family: "Oregano", cursive;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/*hero*/
+#hero {
+  margin-top: 68px;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    margin-top: 56px;
+  }
+}
+
+#hero .overlay {
+  width: 100%;
+  height: 50%;
+  background-color: #bed0d7;
+  overflow: hidden;
+}
+
+#hero .overlay img {
+  min-width: 100%;
+  opacity: 0.2;
+}
+
+.hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-up {
+  align-items: flex-start;
+}
+
+.hero-center {
+  align-items: center;
+}
+
+.hero-bottom {
+  align-items: flex-end;
+}
+
+.hero-container h1 {
+  padding: 60px 0 20px 0;
+  z-index: 100;
+  font-family: "Oregano", cursive;
+  font-size: 48px;
+  color: #000000;
+}
+
+.hero-container .circle {
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #f3e4d6;
+  border: 1px solid #000000;
+}
+
+.hero-container .frodo {
+  width: 200px;
+  margin-top: 100px;
+}
+
+/*intro*/
+.center-me h2,
+.center-me h3,
+.center-me h4,
+.center-me h5,
+.center-me p {
+  text-align: center;
+}
+
+.introImg {
+  display: block;
+  margin: 60px auto;
+}
+
+.vyzva {
+  max-width: 700px;
+}
+
+/*section dividers*/
+#zivotopis-hero,
+#wishlist-hero,
+#jshratky-hero {
+  margin: 60px 0 60px 0;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  min-height: 200px;
+}
+
+#zivotopis-hero .overlay,
+#wishlist-hero .overlay,
+#jshratky-hero .overlay {
+  width: 100%;
+  height: 80%;
+  background-color: #bed0d7;
+}
+
+#zivotopis-hero .hero-container .circle,
+#wishlist-hero .hero-container .circle,
+#jshratky-hero .hero-container .circle {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#zivotopis-hero .hero-container .circle h2,
+#wishlist-hero .hero-container .circle h2,
+#jshratky-hero .hero-container .circle h2 {
+  font-family: "Oregano", cursive;
+  font-size: 28px;
+  color: #000000;
+}
+
+/*zivotopis*/
+
+.arrows {
+  line-height: 75px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.pracZkusenost img {
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 60px;
+}
+
+.pracZkusenost .hidden {
+  display: none;
+}
+
+/*dovednosti*/
+
+.dovednost-box {
+  position: relative;
+  height: 300px;
+  border: 1px solid #0e7fb0;
+  border-radius: 25px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0px;
+  margin-bottom: 60px;
+}
+
+.dovednost-box h5 {
+  color: #0e7fb0;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.dovednost-box p {
+  font-size: 12px;
+  padding: 0 10px 0 10px;
+  text-align: justify;
+}
+
+.dovednost-box .overlay {
+  background-color: #e5e5e5;
+  z-index: 20;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.dovednost-box .overlay.show {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.dovednost-box .overlay.show + h5 {
+  position: absolute;
+  z-index: 33;
+  top: 20px;
+  width: 100%;
+  padding-top: 0px;
+}
+
+.toggleCross {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.overlay > .toggleCross {
+  background-color: #0e7fb0;
+  color: #ffffff;
+}
+
+.dovednost-box > .toggleCross {
+  background-color: #ffffff;
+  color: #0e7fb0;
+  border: 1px solid #0e7fb0;
+}
+
+/*vzdelani*/
+.vzdelani-box {
+  /*border: 0.5px solid lightblue;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.vzdelani-box img {
+  height: 70px;
+  width: 70px;
+  margin-top: -24px;
+  position: relative;
+  transition: transform 1s;
+}
+
+.vzdelani-box img.ico-middle {
+  z-index: 10;
+}
+
+.vzdelani-box img.ico-top {
+  z-index: 20;
+}
+.vzdelani-box p:first-of-type {
+  margin-top: 20px;
+}
+
+.hover img[data-ico="top"] {
+  transform: rotate(20deg) translateX(5px) translateY(-5px);
+}
+
+/*wishlist list*/
+#wishlist-list {
+  list-style: none;
+}
+
+#wishlist-list li {
+  vertical-align: middle;
+  line-height: 45px;
+}
+
+#wishlist-list li:before {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  margin: 10px 50px 10px 10px;
+  display: inline-block;
+  background-color: lightgray;
+  content: "";
+  vertical-align: middle;
+  text-align: center;
+}
+
+#wishlist-list li.checked:before {
+  background-color: #0e7fb0;
+  content: "\2714";
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* wishlist - mobile view adjustment*/
+@media screen and (max-width: 768px) {
+  #wishlist-list li:before {
+    margin: 20px auto;
+    display: block;
+  }
+  #wishlist-list li {
+    text-align: center;
+    line-height: initial;
+  }
+}
+
+/*JS hratky*/
+
+.code {
+  width: 70%;
+  margin: 10px auto;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+/*01 kalkulacka*/
+
+#jshratky-body input {
+  display: none;
+}
+
+.JScontent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+  margin-bottom: 60px;
+}
+
+#jshratky-body label {
+  display: block;
+  width: 1px;
+  margin: 0 auto;
+}
+
+#jshratky-body label:before {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: -22.5px;
+  display: block;
+
+  text-align: center;
+  font-size: 30px;
+  color: #0e7fb0;
+  content: "+";
+}
+
+input.JScheck:checked + label::before {
+  transform: rotate(315deg);
+}
+
+input.JScheck:checked + label + .JScontent {
+  max-height: 1400px;
+}
+
+/*kalkulacka CSS*/
+.calculator input,
+.calculator textarea,
+.calculator button {
+  border: 0;
+  border-radius: 0;
+
+  outline: none;
+  appearance: none;
+}
+
+.calculator input:hover,
+.calculator input:active,
+.calculator input:focus,
+.calculator textarea:hover,
+.calculator textarea:active,
+.calculator textarea:focus,
+.calculator button:hover,
+.calculator button:active,
+.calculator button:focus {
+  outline: none;
+}
+
+.calculator {
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 15em;
+  overflow: hidden;
+}
+
+.calculator__display {
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.714285714em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+}
+
+.calculator__keys {
+  background-color: #999;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator__keys > * {
+  background-color: #fff;
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+.calculator__keys > *:active::before,
+.calculator__keys > .is-depressed::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.key--operator {
+  background-color: #eee;
+}
+
+.key--equal {
+  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}
+
+/*kalkulacka CSS ends here*/
+
+/*Scroll to Top*/
+.scrollTop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #0e7fb0;
+  font-size: 30px;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10%;
+  left: 90%;
+  opacity: 0.6;
+  z-index: 50;
+  display: none;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.scrollTop.show {
+  display: flex;
+}
+
+.scrollTop p {
+  margin: 0;
+  line-height: 50px;
+}

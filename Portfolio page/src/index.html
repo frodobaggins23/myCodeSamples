@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My portfolio page</title>
+    <meta name="description" content="Check what I can do for you">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="language" content="EN">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Open+Sans+Condensed:300,700|Righteous&amp;subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <span id="logo1" class="logo1">J</span><span id="logo2" class="logo2">Č</span>
+            </div>
+            <div class="nav-toggler">
+                <div class="nav-toggler-bar"></div>
+                <div class="nav-toggler-bar"></div>
+                <div class="nav-toggler-bar"></div>
+            </div>
+            <ul class="nav-container">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="headline">
+                <h1>
+                    <span class="headline-highlight">Hi, I am <span class="logo1">J</span>akub <span
+                            class="logo2">Č</span>ejchan.</span>
+                </h1>
+                <h2>
+                    <span class="headline-highlight">I'm a Full-stack Web Developer in training</span>.
+                </h2>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container">
+                <p>
+                    Let's work together to make your product stand out. I create beautiful and functional websites. I
+                    work with my clients step by step from the idea stage until the fully functioning web application.
+                </p>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <div>
+                    <div class="circle"></div>
+                    <h3>D<span class="logo2">i</span>scover</h3>
+                    <p>
+                        Tell me about your project and we brainstorm together the features to create a plan for your
+                        product to launch.
+                    </p>
+                </div>
+                <div>
+                    <div class="circle"></div>
+                    <h3>D<span class="logo2">e</span>sign</h3>
+                    <p>
+                        We design the wireframe and agree together how to create the best experience for your users to
+                        present your brand.
+                    </p>
+                </div>
+                <div>
+                    <div class="circle"></div>
+                    <h3>D<span class="logo2">e</span>ploy</h3>
+                    <p>
+                        We protoype and develop your product. We work together intensily to incorporate your feedback.
+                    </p>
+                </div>
+                <div>
+                    <div class="circle"></div>
+                    <h3>B<span class="logo2">e</span> Ready</h3>
+                    <p>We deploy your product and now your website is ready to get the traction. Get out there and grow
+                        your
+                        audience.</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <h2>My skills</h2>
+                <div class="skillBar bg-primary"><span>HTML</span><progress value="90" max="100"></progress></div>
+                <div class="skillBar bg-primary"><span>CSS</span><progress value="80" max="100"></progress></div>
+                <div class="skillBar bg-primary"><span>JavaScript</span><progress value="45" max="100"></progress></div>
+                <div class="skillBar bg-primary"><span>React</span><progress value="5" max="100"></progress></div>
+                <div class="skillBar bg-primary"><span>jQuery</span><progress value="45" max="100"></progress></div>
+                <div class="skillBar bg-primary"><span>PHP</span><progress value="5" max="100"></progress></div>
+                <div class="skillBar bg-primary"><span>Laravel</span><progress value="5" max="100"></progress></div>
+                <div class="skillBar bg-primary"><span>UX</span><progress value="45" max="100"></progress></div>
+
+            </div>
+        </section>
+        <section class="portfolio-main">
+            <h2>MY PORTFOLIO</h2>
+            <div class="compatibility_wrapper">
+                <!--wrapping .container in another div to prevent problems with 2 nested flex containers-->
+                <div class="container">
+                    <div class="portfolio">
+                        <div class="compatibility_wrapper">
+                            <div class="portfolio__item">
+
+                                <div class="portfolio__item__flipper">
+                                    <a href="./hipster/index.html">
+                                        <div class="portfolio__item__img__front">
+                                            <h3>Generic Hipster Coffee</h3>
+
+                                        </div>
+                                        <div class="portfolio__item__img__back">
+                                            <img src="./img/hipster.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <ul>
+                                    <li>Simple demo website</li>
+                                    <li>Created to demonstrate my positioning skills</li>
+                                    <li></li>
+                                </ul>
+                                <p>Tech stack: HTML, CSS, Sass, Flexbox</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio">
+                        <div class="compatibility_wrapper">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__flipper">
+                                    <div class="portfolio__item__img__front">
+                                        <h3>Future project 2</h3>
+
+                                    </div>
+                                    <div class="portfolio__item__img__back">
+                                        <img src="./img/placeholder-image.png" alt="">
+                                    </div>
+
+                                </div>
+                                <ul>
+                                    <li>Lorem ipsum </li>
+                                    <li>Lorem ipsum dolorem patris</li>
+                                    <li></li>
+                                </ul>
+                                <p>Tech stack: Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio">
+                        <div class="compatibility_wrapper">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__flipper">
+                                    <div class="portfolio__item__img__front">
+                                        <h3>Future project 3</h3>
+
+                                    </div>
+                                    <div class="portfolio__item__img__back">
+                                        <img src="./img/placeholder-image.png" alt="">
+                                    </div>
+
+                                </div>
+                                <ul>
+                                    <li>Lorem ipsum </li>
+                                    <li>Lorem ipsum dolorem patris</li>
+                                    <li></li>
+                                </ul>
+                                <p>Tech stack: Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio">
+                        <div class="compatibility_wrapper">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__flipper">
+                                    <div class="portfolio__item__img__front">
+                                        <h3>Future project 4</h3>
+
+                                    </div>
+                                    <div class="portfolio__item__img__back">
+                                        <img src="./img/placeholder-image.png" alt="">
+                                    </div>
+
+                                </div>
+                                <ul>
+                                    <li>Lorem ipsum </li>
+                                    <li>Lorem ipsum dolorem patris</li>
+                                    <li></li>
+                                </ul>
+                                <p>Tech stack: Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio">
+                        <div class="compatibility_wrapper">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__flipper">
+                                    <div class="portfolio__item__img__front">
+                                        <h3>Future project 5</h3>
+
+                                    </div>
+                                    <div class="portfolio__item__img__back">
+                                        <img src="./img/placeholder-image.png" alt="">
+                                    </div>
+
+                                </div>
+                                <ul>
+                                    <li>Lorem ipsum </li>
+                                    <li>Lorem ipsum dolorem patris</li>
+                                    <li></li>
+                                </ul>
+                                <p>Tech stack: Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio">
+                        <div class="compatibility_wrapper">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__flipper">
+                                    <div class="portfolio__item__img__front">
+                                        <h3>Future project 6</h3>
+
+                                    </div>
+                                    <div class="portfolio__item__img__back">
+                                        <img src="./img/placeholder-image.png" alt="">
+                                    </div>
+
+                                </div>
+                                <ul>
+                                    <li>Lorem ipsum </li>
+                                    <li>Lorem ipsum dolorem patris</li>
+                                    <li></li>
+                                </ul>
+                                <p>Tech stack: Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2>ABOUT ME</h2>
+
+                <div class="compatibility_wrapper">
+                    <div class="bio">
+                        <div class="img_wrapper">
+                            <img src="./img/me.png" alt="">
+                        </div>
+
+                        <div class="bio__text">
+                            <p>
+                                My name is Jakub Čejchan. I am web coder currently undergoing training to become
+                                fullstack developer.
+                                I am developing user interfaces in JavaScript and React and backend of my projects in
+                                PHP and Laravel.
+                            </p>
+                            <p>
+                                I am open to learning new technologies and enjoy working with people who are as
+                                passionate about all web-related as me.
+                            </p>
+                            <p>I have 5+ years of experience working in digital marketing and 2 years experience working
+                                in IT software company.
+                            </p>
+                            <p> Beside programming, I like music (I play guitar and sing) as well as biking and hiking.
+                            </p>
+                            <br>
+                            <p><span>Get in touch and let's do something great together.</spa>
+                            </p>
+                            <button>Contact me</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="findMe">
+            <div class="container">
+                <h3>Find me here</h3>
+                <div>
+                    <img src="./img/github.svg" alt="">
+                    <img src="./img/linkedin.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact me</h2>
+                <div class="compatibility_wrapper">
+                    <form action="">
+                        <div class="compatibility_wrapper">
+                            <div class="flex_form">
+                                <input type="text" placeholder="First Name" required>
+                                <input type="text" placeholder="Last Name" required>
+                                <input type="email" placeholder="Email" required>
+                                <input type="number" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <textarea name="text" id="" cols="30" rows="10"></textarea>
+                        <button id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="ruler"></div>
+            <h2>Nice to meet you</h2>
+            <div class="ico">
+                <img src="./img/github.svg" alt="">
+                <img src="./img/linkedin.svg" alt="">
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--custom fonts-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito|Oregano&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <!---bootstrap css--->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Správnej web</title>
+    <meta name="Description" content="Osobní stránka jednoho bloumajícího programátora">
+    <meta name="robots" content="noindex">
+  </head>
+  <body>
+    <!--navbar-->
+    <div class="navigace">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-nav">
+            <a href="#intro" class="nav-item nav-link ">O mně</a>
+            <a href="#zivotopis-hero" class="nav-item nav-link">Životopis</a>
+            <a href="#wishlist-hero" class="nav-item nav-link">Wish list</a>
+            <a href="#jshratky-hero" class="nav-item nav-link">JS hrátky</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--hero-->
+    <section id="hero">
+      <div class="overlay">
+        <img
+          src="./img/heroImg.jpg"
+          alt="credit: Photo by Jaël Vallée on Unsplash"
+        />
+      </div>
+      <div class="hero-container hero-up">
+        <h1>Jakub Čejchan</h1>
+      </div>
+      <div class="hero-container hero-center">
+        <div class="circle"></div>
+      </div>
+      <div class="hero-container hero-center">
+        <img class="frodo" src="./img/hero_frodo.svg" alt="Frodo Ico" />
+      </div>
+    </section>
+    <!--intro-->
+    <section id="intro" class="center-me">
+      <div class="container">
+        <div class="row">
+          <h3 class="col-12">Komu patří tahle stránka?</h3>
+          <p class="col-10 offset-1">
+            Jednomu potrhlému klukovi, který se rozhodl, že si splní sen a naučí
+            se stavět webové stránky. Tenhle web je jeho úplně první pokus, jeho
+            první krůček na dlouhé cestě. Najdete zde všechno, co se zatím
+            naučil.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img src="./img/css.png" class="introImg" alt="css ico" />
+          </div>
+          <h4 class="col-12">Výzva 1 - HTML/CSS</h4>
+          <p class="col-10 mx-auto vyzva">
+            HMTL/CSS Mojí první výzvou je zvládnout taje HTML a CSS. Chtěl bych
+            zvládnout postavit web od A až do Z, od wireframu, přes design až po
+            HTML.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <img src="./img/java.png" class="introImg" alt="css ico" />
+          </div>
+          <h4 class="col-12">Výzva 2 - Javascript</h4>
+          <p class="col-10 mx-auto vyzva">
+            Odtud je už krůček k opravdovému programování. Nejprve je třeba
+            zkrotit konzoli a pak už půjde všechno samo.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--zivotopis hero-->
+    <section id="zivotopis-hero">
+      <div class="overlay"></div>
+      <div class="hero-container hero-bottom">
+        <div class="circle">
+          <h2>Životopis</h2>
+        </div>
+      </div>
+    </section>
+    <!--zivotopis body-->
+    <section id="zivotopis-body" class="center-me">
+      <div class="container">
+        <div class="row">
+          <h3 class="col-12">Pracovní zkušenosti</h3>
+        </div>
+        <div class="row pracZkusenost">
+          <div class="col-3 arrows text-right" id="arrPrevious">⮘</div>
+          <div class="col-6">
+            <img
+              src="./img/CV_cvt.png"
+              class="zivotopisImg"
+              alt="Clovek v tisni"
+              data-zamestnani="cvt"
+            />
+            <img
+              src="./img/CV_bsh.png"
+              class="zivotopisImg hidden"
+              alt="B/S/H"
+              data-zamestnani="bsh"
+            />
+            <img
+              src="./img/CV_avast.png"
+              class="zivotopisImg hidden"
+              alt="Avast Software"
+              data-zamestnani="avast"
+            />
+          </div>
+          <div class="col-3 arrows" id="arrNext">⮚</div>
+        </div>
+        <div class="row pracZkusenost">
+          <div class="col-6 offset-3" data-zamestnani="cvt">
+            <h4>Člověk v tísni</h4>
+            <p>02/2013-10/2015</p>
+            <p>Online Specialista</p>
+          </div>
+          <div
+            class="col-10 offset-1"
+            data-zamestnani="cvt"
+            style="margin-bottom:60px;"
+          >
+            <p>
+              Na dobu strávenou v největší české neziskovce rád vzpomínám. Hodně
+              jsem se zde naučil. Pokud bych měl zmínit to nejdůležitější- měl
+              jsem na starosti content management kampaňových webů, zodpovídal
+              jsem za jejich průběžnou aktualizaci, redesign a další rozvoj.
+              Dělal jsem email marketing (textace, rozesílka, cílení,
+              vyhodnocování). Při vyhodnocování kampaní jsem pracoval s Google
+              Analytics. Psal jsem texty pro web. Byly mi svěřeny samostatné
+              projekty, na nichž jsem spolupracoval s týmem kolegů/extermistů
+              (např. kompletní realizace výstavy k povodním 2013)
+            </p>
+          </div>
+          <div class="col-6 offset-3 hidden" data-zamestnani="bsh">
+            <h4>B/S/H</h4>
+            <p>11/2015-06/2017</p>
+            <p>Digital marketing specialista</p>
+          </div>
+          <div
+            class="col-10 offset-1 hidden"
+            data-zamestnani="bsh"
+            style="margin-bottom:60px;"
+          >
+            <p>
+              Mým denním chlebem v BSH byl content management a rozvoj
+              korporátních webů, ale také např. tvorba microsites. Ve spolupráci
+              s externími agenturami jsem nastavoval komunikaci frmy na FB nebo
+              zadával online reklamu. Mimo to jsem taky pomáhal kolegům s brand
+              marketingem značek Bosch a Siemens (online video spoty, landing
+              pages na webu, kampaně na FB atd).
+            </p>
+          </div>
+          <div class="col-6 offset-3 hidden" data-zamestnani="avast">
+            <h4>Avast Software</h4>
+            <p>08/2017-04/2019</p>
+            <p>Online Specialista</p>
+          </div>
+          <div
+            class="col-10 offset-1 hidden"
+            data-zamestnani="avast"
+            style="margin-bottom:60px;"
+          >
+            <p>
+              V Avastu mám na starosti rozvoj webu www.hidemyass.com a podílím
+              se na správě webu www.avg.com. Moje každodenní práce spočívá v
+              koordinaci kreativnho týmu (UX, designeři, copywriteři) a zadávání
+              požadavků na kodéry. Polovinu týmu tvoří cizinci, pracovním
+              jazykem je tedy pro mě bez výjimky angličtina.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h3 class="col-12">Praktické dovednosti</h3>
+        </div>
+        <div class="row d-flex justify-content-around">
+          <div class="col-md-3 dovednost-box" data-dovednost="projekt">
+            <div class="overlay show">
+              <div class="toggleCross" data-dovednost="projekt">+</div>
+            </div>
+            <h5>Projektové řízení</h5>
+            <p>
+              I když např. HTML a weby mě hodně baví, nejsem zatím kodér ani
+              programátor. Web vám tedy sám nepostavím. Je na mě ale vždy
+              spoleh, pokud je potřeba dát dohromady schopné lidi (např. právě
+              programátory, grafky, copywritery) a zajistit, aby nová webová
+              stránka, video nebo kampaň na Facebooku vznikly včas a přesně
+              podle zadání.
+            </p>
+            <div class="toggleCross" data-dovednost="projekt">-</div>
+          </div>
+          <div class="col-md-3 dovednost-box" data-dovednost="psani">
+            <div class="overlay show">
+              <div class="toggleCross" data-dovednost="psani">+</div>
+            </div>
+            <h5>Psaní, copywriting</h5>
+            <p>
+              K psaní tíhnu odjakživa. Při studiích jsem působil ve studentském
+              časopisu. Jako dobrovolník jsem pak dělal 2 roky editora pro
+              Amnesty International. V předchozích zaměstnáních jsem vymýšlel
+              texty na web a do newsletterů. Pomáhal jsem s překlady a
+              stylistikou. I když se poslední dobou k psaní zase tolik
+              nedostanu, stále rád copywriterům alespoň připomínkuji texty ;-)
+            </p>
+            <div class="toggleCross" data-dovednost="psani">-</div>
+          </div>
+          <div class="col-md-3 dovednost-box" data-dovednost="jazyk">
+            <div class="overlay show">
+              <div class="toggleCross" data-dovednost="jazyk">+</div>
+            </div>
+            <h5>CAE language certificate</h5>
+            <p>
+              S angličtinou jsem ve styku v podstatě každý den, a to jak v
+              práci, tak doma. Nedělá mi problém složitější konverzace ani
+              překlady či psaní textů. V šuplíku mi leží certifkát CAE od
+              British Council (úroveň C1 evropské klasifkace).
+            </p>
+            <div class="toggleCross" data-dovednost="jazyk">-</div>
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="col-12">Jaké mám vzdělání</h3>
+        </div>
+        <div class="row d-flex justify-content-around">
+          <div class="col-md-3 vzdelani-box">
+            <img src="./img/book.png" alt="kniha ico" />
+            <p>Dvořákovo Gymnázium</p>
+            <p>(1998-2006)</p>
+          </div>
+          <div class="col-md-3 vzdelani-box">
+            <img
+              src="./img/book.png"
+              alt="kniha ico"
+              class="ico-middle"
+              data-ico="top"
+            />
+            <img src="./img/book.png" alt="kniha ico" />
+            <p>Abo Akademi</p>
+            <p>(2009-2010)</p>
+          </div>
+
+          <div class="col-md-3 vzdelani-box">
+            <img
+              src="./img/book.png"
+              alt="kniha ico"
+              class="ico-top"
+              data-ico="top"
+            />
+            <img src="./img/book.png" alt="kniha ico" class="ico-middle" />
+            <img src="./img/book.png" alt="kniha ico" />
+            <p>Univerzita Karlova</p>
+            <p>(2006-2012)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--wishlist hero-->
+    <section id="wishlist-hero">
+      <div class="overlay"></div>
+      <div class="hero-container hero-bottom">
+        <div class="circle">
+          <h2>Wish list</h2>
+        </div>
+      </div>
+    </section>
+    <!--wishlist body-->
+    <section id="wishlist-body" class="center-me">
+      <div class="container">
+        <div class="row col-10 offset-1">
+          <p style="width:100%;">
+            Tohle je můj kódovací wish list. Přeju mu, aby byl co nejdelší.
+          </p>
+        </div>
+
+        <div class="row col">
+          <ul id="wishlist-list">
+            <li class="checked">
+              Udělat grafický návrh těchto stránek (Figma)
+            </li>
+            <li class="checked">
+              Nakódovat kostru pomocí Boostrapu a Flexboxu
+            </li>
+            <li class="checked">
+              Dodat základní interaktivitu pomocí JS (carousel, klikací boxy)
+            </li>
+            <li class="checked">
+              Implementovat smooth scrolling and interaktivní navigaci pomocí JS
+            </li>
+            <li class="checked">Přidat sekci s JS experimenty</li>
+            <li>Dotáhnout grafické detaily</li>
+            <li>Doladit responsivní verzi</li>
+            <li>Udělat code review</li>
+            <li>Převést na wordpress</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="jshratky-hero">
+      <div class="overlay"></div>
+      <div class="hero-container hero-bottom">
+        <div class="circle">
+          <h2>JS hrátky</h2>
+        </div>
+      </div>
+    </section>
+    <section id="jshratky-body" class="container center-me">
+      <h4>Kalkulačka</h4>
+      <p>Kalkulačka napsaná v čistém Javascriptu</p>
+      <input type="checkbox" name="JScheck" id="check1" class="JScheck" />
+      <label for="check1"></label>
+      <!--kalkulacka-->
+      <section class="JScontent">
+        <div class="calculator">
+          <div class="calculator__display">0</div>
+
+          <div class="calculator__keys">
+            <button class="key--operator" data-action="add">+</button>
+            <button class="key--operator" data-action="subtract">-</button>
+            <button class="key--operator" data-action="multiply">
+              &times;
+            </button>
+            <button class="key--operator" data-action="divide">÷</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button class="key--operator" data-action="clear">AC</button>
+            <button class="key--equal" data-action="calculate">=</button>
+          </div>
+        </div>
+        <div class="row">
+          <a
+            href="https://codepen.io/frodo23/pen/xBGEYG"
+            target="_blank"
+            class="col text-center"
+            >Zobraz kód</a
+          >
+        </div>
+      </section>
+      <!--kalkulacka ENDS HERE-->
+      <h4>Budoucí projekt</h4>
+      <p>Ukaž projekt</p>
+      <input type="checkbox" name="JScheck" id="check2" class="JScheck" />
+      <label for="check2"></label>
+      <section class="JScontent">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga saepe
+          at quibusdam alias inventore, eveniet ea enim consequatur eligendi rem
+          animi quo. Accusantium distinctio libero magnam, dicta provident
+          temporibus facere?
+        </p>
+      </section>
+    </section>
+
+    <!--scroll to top-->
+    <div class="scrollTop">
+      <p>&#8593;</p>
+    </div>
+    <!--bootstrap scripts-->
+    <!--Jquery minified not default slim, as it is needed for smooth scrolling-->
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!--bootstrap scripts END-->
+    <!--Google Pretifty script-->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!--personal scripts-->
+    <script src="./js/script.js"></script>
+    <script src="./js/calc.js"></script>
+  </body>
+</html>

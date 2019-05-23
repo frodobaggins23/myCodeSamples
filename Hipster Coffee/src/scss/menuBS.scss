@@ -1,0 +1,39 @@
+h2 {
+    margin-left: 0;
+}
+
+h3 {
+    margin-left: 0;
+}
+
+//highlighting of left column on wide screens
+#highlight {
+    
+    @media screen and (min-width:991px) {
+        background-color: #fbf5ee;
+        padding: 1rem;
+        
+    }
+}
+
+.menu__item {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.5;
+}
+
+.menu__content {
+    margin-bottom: 1rem;
+}
+
+//overriding conflicts in styling between main.css and Bootstrap
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    margin-left:0;
+    margin-right:0;
+}
+

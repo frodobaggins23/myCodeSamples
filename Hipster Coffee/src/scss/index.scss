@@ -1,0 +1,43 @@
+main {
+    
+    img.hero {
+        width: 100%;
+    }
+
+    .col-3-box {
+        display: flex;
+        justify-content: flex-start;
+        width: 95%;
+
+        @media screen and (max-width:991px) {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            padding:0;
+
+        }
+
+        div {
+            width:30%;
+            margin-left: 1rem;
+            line-height: 1.5;
+
+            @media screen and (max-width:991px) {
+            width:80%;
+            margin-left: 0;
+            text-align: center;
+            }
+
+            h4 {
+                margin-left: 0;
+            }
+        }
+    }
+
+    iframe {
+        position: relative;
+        top:50px;
+    }
+}
+
